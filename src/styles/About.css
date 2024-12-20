@@ -1,0 +1,38 @@
+/* components/About.css */
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .profile-picture img {
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    width: 7rem; /* Ajusta el tamaño de la imagen */
+    height: 7rem; /* Ajusta el tamaño de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    transition: background 1s ease-in; /* Agrega transición */
+    box-shadow: 0 4px 8px rgba(15, 15, 15, 80%);
+    background: linear-gradient(135deg, #8affbfff, #ff8a8aff);
+    position: relative;
+  }
+  
+  .code {
+    font-family: monospace; /* Estilo de fuente para el código */
+  }
+  
+  .variable {
+    color: #007acc; /* Color para la variable */
+  }
+  
+  .string {
+    color: #d14; /* Color para la cadena */
+  }
+  

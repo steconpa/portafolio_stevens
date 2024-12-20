@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    min-width: 830px;
+    justify-content: space-between; /* Espacio uniforme entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ancho total */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Cambia a columna en dispositivos móviles */
+      align-items: center; /* Centra horizontalmente */
+      width: 100%; /* Ancho total */
+      box-sizing: border-box;
+      min-width: 320px;
+    }
+    }
