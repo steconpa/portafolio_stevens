@@ -2,9 +2,11 @@
 
 .nav {
     display: flex;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    align-items: center; /* Centra verticalmente los elementos */
-    box-sizing: border-box; /* Incluye el borde en el ancho total */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 530px;
 
     & ul {
       display: flex;

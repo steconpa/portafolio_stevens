@@ -6,17 +6,30 @@
     text-align: center;
   }
 
+  .section-header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .section-tittle {
+    padding: 0 1rem;
+  }
+
   .profile-picture {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
     position: relative;
+    padding: 0 1rem;
   }
   
   .profile-picture img {
     border-radius: 50%; /* Hace que la imagen sea circular */
     width: 7rem; /* Ajusta el tamaño de la imagen */
     height: 7rem; /* Ajusta el tamaño de la imagen */
+    min-width: 150px;
+    min-height: 150px;
     object-fit: cover; /* Mantiene la proporción de la imagen */
     transition: background 1s ease-in; /* Agrega transición */
     box-shadow: 0 4px 8px rgba(15, 15, 15, 80%);

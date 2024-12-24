@@ -5,6 +5,8 @@
     will-change: filter;
     transition: filter 300ms;
     justify-tracks: flex-start;
+    min-width: 320px;
+    box-sizing: border-box;
 
     & img {
       width: 16rem; /* Tamaño base del logotipo */

@@ -1,6 +1,6 @@
 header {
     display: flex;
-    min-width: 830px;
+    min-width: 870px;
     justify-content: space-between; /* Espacio uniforme entre elementos */
     align-items: center; /* Centra verticalmente los elementos */
     padding: 10px; /* Espaciado interno */

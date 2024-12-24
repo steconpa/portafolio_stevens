@@ -41,28 +41,37 @@ const About = () => {
 
   return (
     <section className="about">
-      <div className="profile-picture">
-        <img
-          ref={imgRef}
-          src={profilePicture}
-          alt="foto de perfil"
-          onMouseMove={handleMouseOver}
-          onMouseLeave={handleMouseLeave}
-        />
+      <div className="section-header">
+        <div className="profile-picture">
+          <img
+            ref={imgRef}
+            src={profilePicture}
+            alt="foto de perfil"
+            onMouseMove={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          />
+        </div>
+        <div className="section-tittle">
+          <div className="code">
+            <span>const </span>
+            <span className="variable">name</span>
+            <span> =</span>
+          </div>
+          <h1 className="string">Stevens Contreras;</h1>
+          <p className="section-sub-tittle">
+            Desarrolador Full-Stack & Diseñador EdTech
+          </p>
+        </div>
       </div>
-      <div className="code">
-        <span>const </span>
-        <span className="variable">name</span>
-        <span> =</span>
-      </div>
-      <h1 className="string">Stevens Contreras;</h1>
-      <p>
-        Soy un Desarrollador Full Stack y EdTech Designer enfocado en
-        transformar las necesidades del negocio o de aprendizaje en aplicaciones
-        funcionales. Colaboro estrechamente con equipos multidisciplinarios y mi
-        enfoque aporta una perspectiva centrada en la experiencia de los
-        usuarios y en lograr soluciones escalables.
-      </p>
+      <article>
+        <p>
+          Soy un Desarrollador Full Stack y EdTech Designer enfocado en
+          transformar las necesidades del negocio o de aprendizaje en
+          aplicaciones funcionales. Colaboro estrechamente con equipos
+          multidisciplinarios y mi enfoque aporta una perspectiva centrada en la
+          experiencia de los usuarios y en lograr soluciones escalables.
+        </p>
+      </article>
     </section>
   );
 };
