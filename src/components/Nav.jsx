@@ -15,6 +15,7 @@ const Nav = () => {
   const renderNavItem = (path, label) => {
     // Verifica si la ubicación actual coincide con la ruta
     const isActive = location.pathname === path;
+
     return (
       <li key={path}>
         {/* Agrega una clave única para el elemento */}
@@ -22,8 +23,8 @@ const Nav = () => {
           {/* Agrega la clase "active" si la ubicación actual coincide con la ruta */}
           {isActive ? (
             <>
-              <span className="import-text">import</span>
-              {transformText(label)}
+              <code className="import-text">import</code>
+              <span>{transformText(label)}</span>
             </>
           ) : (
             label

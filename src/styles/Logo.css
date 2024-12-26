@@ -2,34 +2,46 @@
 
 .logo {
     flex: 0 0 auto; /* No se expandirá */
-    will-change: filter;
-    transition: filter 300ms;
-    justify-tracks: flex-start;
-    min-width: 320px;
+    will-change: filter; /* Mejora el rendimiento de la animación */
+    transition: filter 300ms; /* Efecto de transición para el filtro */
+    width: fit-content; /* Ajusta el ancho al contenido */
     box-sizing: border-box;
 
     & img {
-      width: 16rem; /* Tamaño base del logotipo */
-      height: auto; /* Mantiene la proporción del logotipo */
+      width: 100%; /* Tamaño base del logotipo */
+      aspect-ratio: 4 / 1; /* Mantiene la proporción del logotipo */
       transition: transform 0.3s, box-shadow 0.3s; /* Efecto de transición para el hover */
       box-shadow: none; /* Reset box-shadow */
     }
 
     & img:hover {
       transform: scale(1.05); /* Aumenta el tamaño del logotipo al pasar el mouse */
-      filter: drop-shadow(0 0 0.7em #646cffaa); /* Agrega un efecto de sombra al logotipo */
+      filter: drop-shadow(0 0 0.7em var(--color-tertiary)); /* Agrega un efecto de sombra al logotipo */
     }
 
     & img:active {
       transform: scale(1); /* Restaura el tamaño original al hacer clic */
-      filter: drop-shadow(0 0 0.7em #646cff); /* Cambia el color de la sombra al hacer clic */
     }
 
-  }
-  
-  /* Estilos para dispositivos móviles */
-  @media (max-width: 768px) {
-    .logo img {
-      width: 10rem; /* Reduce el tamaño del logotipo en pantallas más pequeñas */
+    /* Estilos para pantallas de escritorio */
+    @media (min-width: 768px) {
+      & img {
+        max-height: 72px; /* Limita la altura del logotipo */
+      }
     }
+
+    /* Estilos para tablets */
+    @media (min-width: 480px) and (max-width: 767px) {
+      & img {
+        max-height: 48px; /* Limita la altura del logotipo */
+      }
+    }
+
+    /* Estilos para móviles */
+    @media (max-width: 479px) {
+      & img {
+        max-height: 32px; /* Limita la altura del logotipo */
+      }
+    }
+
   }

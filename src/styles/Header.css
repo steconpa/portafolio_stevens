@@ -1,19 +1,9 @@
 header {
-    display: flex;
-    min-width: 870px;
-    justify-content: space-between; /* Espacio uniforme entre elementos */
+    display: flex; /* Flexbox para alinear elementos */
+    flex-wrap: wrap; /* Ajusta el contenido al ancho del contenedor */
+    justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Centra verticalmente los elementos */
-    padding: 10px; /* Espaciado interno */
+    padding: 0.5rem; /* Espaciado interno */
     width: 100%; /* Ancho total */
     box-sizing: border-box; /* Incluye el borde en el ancho total */
   }
-
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column; /* Cambia a columna en dispositivos móviles */
-      align-items: center; /* Centra horizontalmente */
-      width: 100%; /* Ancho total */
-      box-sizing: border-box;
-      min-width: 320px;
-    }
-    }

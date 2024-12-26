@@ -1,74 +1,66 @@
 /* Nav.css */
 
 .nav {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: fit-content;
+  
+  & ul {
     display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 530px;
-
-    & ul {
-      display: flex;
-      max-width: 530px;
-      list-style: none;
-      padding: 0;
-      width: 100%; /* Ancho total */
-      justify-content: space-around; /* Espacio uniforme entre elementos */
-
-      & li {
-          padding: 0.5rem 0;
-          
-          & a{
-              margin: 0 0.5rem; /* Espacio entre elementos */
-              position: relative; /* Para el efecto de subrayado */
-              display: block;
-              text-decoration: none; /* Elimina el subrayado predeterminado */
-              text-transform:initial; 
-              color: #8affbfff; /* Color del texto por defecto */
-              transition: 0.3s; /* Transición suave para el color */
-              
-              /* Efecto de subrayado al pasar el mouse */
-              &::after {
-                content: '';
-                position: absolute;
-                top: 100%; /* Ajusta la posición de la línea */
-                left: 0;
-                width: 100%;
-                right: 0;
-                bottom: 0; /* Ajusta la posición de la línea */
-                height: 2px; /* Altura de la línea */
-                background-color: #ffb2ffff; /* Color de la línea */
-                transform: scaleX(0);
-                transform-origin: right;
-                transition: transform 0.3s; /* Transición suave para la línea */
-              }
+    
+    & li {
+      padding: 0rem 0.5rem;
+      text-wrap: nowrap;
       
-              &:hover::after {
-                transform: scaleX(1); /* Muestra la línea al pasar el mouse */
-                transform-origin: left;
-              }
+      & a{
+        position: relative; /* Para el efecto de subrayado */
+        display: block;
+        text-decoration: none; /* Elimina el subrayado predeterminado */
+        text-transform:initial; /* Transforma el texto a minúsculas */
+        color: var(--color-primary); /* Color del texto por defecto */
+        transition: 0.3s; /* Transición suave para el color */
+        
+        /* Efecto de subrayado al pasar el mouse */
+        &::after {
+          content: '';
+          position: absolute;
+          top: 100%; /* Ajusta la posición de la línea */
+          left: 0;
+          width: 100%;
+          right: 0;
+          bottom: 0; /* Ajusta la posición de la línea */
+          height: 2px; /* Altura de la línea */
+          background-color: var(--acent-color); /* Color de la línea */
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s; /* Transición suave para la línea */
         }
-
+        
+        /* Efecto de subrayado al pasar el mouse */
+        &:hover::after {
+          transform: scaleX(1); /* Muestra la línea al pasar el mouse */
+          transform-origin: left; /* Ajusta la dirección de la línea */
+        }
+        
+        /* Estilos para el elemento activo */
+        &.active {
+          color: var(--color-tertiary); /* Color del texto para el elemento activo */
+          text-align: center; /* Centrar el texto */
+          font-family: 'Azeret Mono', monospace;
+        }
       }
     }
   }
-
-  /* Estilo para el elemento activo */
-.nav ul li a.active {
-  color: #ffb2ffff; /* Color del texto para el elemento activo */
-  padding: 0 0.5rem; /* Espaciado interno */
-  text-align: center; /* Centrar el texto */
-  position: relative; /* Para el efecto de subrayado */
-  
-  &::after {
-    transform: scaleX(1); /* Muestra la línea */
-  }
 }
-
-.nav ul li a.active .import-text {
+  
+.import-text {
   font-size: 0.8rem; /* Tamaño de fuente más pequeño */
-  color: #ff4d4d; /* Color rojo suave para "import" */
   position: absolute; /* Posiciona el texto de "import" */
   top: -50%; /* Ajusta la posición vertical */
   left: 25%; /* Ajusta la posición horizontal */
@@ -77,11 +69,8 @@
   transition: transform 0.3s ease-in-out; /* Transición suave para el texto */
 }
 
-  @media (max-width: 768px) {
-    nav {
-      justify-content: center; /* Centra el contenido del nav */
-    }
+@media (max-width: 768px) {
+  nav {
+    justify-content: center; /* Centra el contenido del nav */
   }
-
-
-  
+}

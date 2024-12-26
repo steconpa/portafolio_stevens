@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="400mm"
-   height="100mm"
-   viewBox="0 0 400 100"
+   width="331.20175mm"
+   height="82.341766mm"
+   viewBox="0 0 331.20175 82.341766"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -17,53 +17,58 @@
        width="789.43524"
        height="111.95627"
        id="rect2" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter4"
+       x="-0.012354831"
+       y="-0.063806083"
+       width="1.0350054"
+       height="1.1807839">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood3" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.000000"
+         id="feGaussianBlur3" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="6.000000"
+         dy="6.000000"
+         id="feOffset3" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite3" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite4" />
+    </filter>
   </defs>
   <g
      id="layer1"
-     transform="translate(-25.000002,-25)">
+     transform="translate(-61.046455,-33.829114)">
     <g
        id="g20"
        transform="translate(-25,-25)">
-      <g
-         id="g22">
-        <rect
-           style="fill:#353535;fill-opacity:1;stroke-width:0.265219"
-           id="rect1"
-           width="400"
-           height="100"
-           x="50"
-           y="50"
-           ry="50.000004" />
-        <text
-           xml:space="preserve"
-           transform="matrix(0.64619382,0,0,0.72725697,-116.51289,-222.92749)"
-           id="text1"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:99.2453px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#80ffff;fill-opacity:1"><tspan
-             x="287.06641"
-             y="463.24104"
-             id="tspan1">&lt;StevDev /&gt;</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.05px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code, @wght=600';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 600;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#aedefc;fill-opacity:1;stroke-width:0.324477"
-           x="93.171829"
-           y="128.29762"
-           id="text3"
-           transform="scale(0.94262176,1.0608709)"><tspan
-             id="tspan14"
-             x="93.171829"
-             y="128.29762"
-             style="stroke-width:0.324477"><tspan
-   style="fill:#ffb2ff;fill-opacity:1;stroke-width:0.324477"
-   id="tspan15">[</tspan> <tspan
-   style="fill:#8affbf;fill-opacity:1;stroke-width:0.324477"
-   id="tspan17">&quot;Full-Stack Developer&quot;</tspan><tspan
-   style="fill:#808080;fill-opacity:1;stroke-width:0.324477"
-   id="tspan19">,</tspan> <tspan
-   style="fill:#8affbf;fill-opacity:1;stroke-width:0.324477"
-   id="tspan18">&quot;EdTech Designer&quot;</tspan> <tspan
-   style="fill:#ffb2ff;fill-opacity:1;stroke-width:0.324477"
-   id="tspan16">]</tspan></tspan></text>
-      </g>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.54910359,0,0,0.61798705,-70.735463,-162.7465)"
+         id="text1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:99.2453px;font-family:Poppins;-inkscape-font-specification:'Poppins, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#80ffff;fill-opacity:1;filter:url(#filter4)"><tspan
+           x="287.06641"
+           y="460.02714"
+           id="tspan1">&lt;StevDev /&gt;</tspan></text>
     </g>
   </g>
 </svg>

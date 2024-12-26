@@ -1,18 +1,26 @@
 @import 'normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #353535ff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #8affffff;
+  --color-secondary: #8affbfff;
+  --color-tertiary: #ffb2ffff;
+  --dark-background: #353535ff;
+  --light-background: #f5f5f5ff;
+  --primary-text: #ffffffff;
+  --secundary-text: #666666ff;
+  --acent-color: #FBCC12ff;
 }
 
 body {
@@ -22,30 +30,21 @@ body {
   min-width: 320px; 
   min-height: 100vh;
   justify-content: center;
+  background-color: var(--dark-background);
+  color: var(--primary-text);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main {
+  padding: 2rem;
+  margin: 0 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--color-tertiary);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+code, pre {
+  font-family: 'Azeret Mono', monospace;
+  font-size: 1rem;
+  color: var(--acent-color);
 }
 
 @media (prefers-color-scheme: light) {
