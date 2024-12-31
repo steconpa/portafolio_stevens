@@ -105,26 +105,24 @@ const About = () => {
 
   return (
     <section className="about">
-      <div className="profile-picture">
-        <img
-          ref={imgRef}
-          src={profilePicture}
-          alt="foto de perfil"
-          onMouseMove={handleMouseOver}
-          onMouseLeave={handleMouseLeave}
-        />
-      </div>
-      <header className="section-tittle">
-        <code className="code-super">
-          const
-          <span>name</span>=
-        </code>
-        <h1>Stevens Contreras;</h1>
-        <code className="section-subtittle">
-          <span>{"{ "}</span>
-          {'"Full-Stack Developer", "EdTech Desing"'}
-          <span>{" }"}</span>
-        </code>
+      <header className="section-header">
+        <div className="profile-picture">
+          <img
+            ref={imgRef}
+            src={profilePicture}
+            alt="foto de perfil"
+            onMouseMove={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          />
+        </div>
+        <div className="section-title">
+          <h1>Stevens Contreras;</h1>
+          <code className="section-subtittle">
+            <span>{"{ "}</span>
+            {'"Full-Stack Developer", "EdTech Desing"'}
+            <span>{" }"}</span>
+          </code>
+        </div>
       </header>
       <aside className="tech-skills">
         <ul>

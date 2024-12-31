@@ -1,10 +1,11 @@
 /* Nav.css */
 
-.nav {
-  display: flex;
-  align-items: center;
+nav.nav {
   box-sizing: border-box;
-  width: fit-content;
+  
+  & button.menu-icon {
+    display: none; /* Oculta el icono del menú */
+  }
   
   & ul {
     display: flex;
@@ -15,6 +16,7 @@
     justify-content: center;
     
     & li {
+      width: fit-content;
       padding: 0rem 0.5rem;
       text-wrap: nowrap;
       
@@ -57,6 +59,7 @@
       }
     }
   }
+
 }
   
 .import-text {
@@ -69,8 +72,22 @@
   transition: transform 0.3s ease-in-out; /* Transición suave para el texto */
 }
 
-@media (max-width: 768px) {
-  nav {
-    justify-content: center; /* Centra el contenido del nav */
+@media (max-width: 767px) {
+  nav.nav {
+    flex-direction: column;
+    justify-items: center;
+    
+    & ul {
+    display: none;
+
+    &.menu-open {
+      display: flex;
+      flex-direction: column; 
+    }
   }
+
+  button.menu-icon {
+    display: block;
+  }
+}
 }

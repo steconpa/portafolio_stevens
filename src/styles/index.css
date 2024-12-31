@@ -25,7 +25,7 @@
 
 body {
   margin: 0;
-  padding: 1rem;
+  padding: 0.5vw;
   display: flex;
   min-width: 320px; 
   min-height: 100vh;
@@ -35,8 +35,8 @@ body {
 }
 
 main {
-  padding: 2rem;
-  margin: 0 2rem;
+  padding: 1vw;
+  margin: 0 1vw;
   border-radius: 1rem;
   box-shadow: 0 0 1rem var(--color-tertiary);
 }

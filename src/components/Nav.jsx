@@ -1,26 +1,23 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ImMenu3, ImMenu4 } from "react-icons/im";
 import "../styles/Nav.css";
 
 const Nav = () => {
-  // Obtiene la ubicación actual de la aplicación
+  const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
 
-  // Transforma el texto para que tenga un formato específico
+  // Define una función para transformar el texto.
   const transformText = (text) => {
-    const formattedText = text.replace(/\s+/g, ""); // Elimina los espacios en blanco
-    return `{ ${formattedText} }`; // Agrega llaves al texto
+    const formattedText = text.replace(/\s+/g, ""); // Elimina los espacios en blanco.
+    return `{ ${formattedText} }`; // Agrega llaves al texto.
   };
 
-  // Renderiza un elemento de navegación
   const renderNavItem = (path, label) => {
-    // Verifica si la ubicación actual coincide con la ruta
     const isActive = location.pathname === path;
-
     return (
       <li key={path}>
-        {/* Agrega una clave única para el elemento */}
         <Link to={path} className={isActive ? "active" : ""}>
-          {/* Agrega la clase "active" si la ubicación actual coincide con la ruta */}
           {isActive ? (
             <>
               <code className="import-text">import</code>
@@ -35,8 +32,21 @@ const Nav = () => {
   };
 
   return (
-    <nav className="nav">
-      <ul>
+    <nav
+      className="nav"
+      role="navigation"
+      aria-label="Navegación principal"
+      aria-expanded={showMenu}
+    >
+      <button
+        className="menu-icon"
+        type="button"
+        aria-label={showMenu ? "Cerrar menú" : "Abrir menú"}
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        {showMenu ? <ImMenu4 /> : <ImMenu3 />}
+      </button>
+      <ul className={showMenu ? "menu-open" : ""}>
         {renderNavItem("/", "Sobre Mi")}
         {renderNavItem("/projects", "Proyectos")}
         {renderNavItem("/edtech", "EdTech")}
