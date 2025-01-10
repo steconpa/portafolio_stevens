@@ -1,15 +1,15 @@
 header {
   padding: 0.5rem; /* Espaciado interno */
   margin-bottom: 1rem;
-  width: 100%; /* Ancho total */
+  max-width: 100%; /* Ancho total */
   box-sizing: border-box; /* Incluye el borde en el ancho total */
   
-  & a {
+  a {
     text-decoration: none; /* Elimina la subrayado */
     color: var(--primary-text); /* Color de texto */
   }
   
-  & h1 {
+  h1 {
     margin: 0.5rem 0rem; 
     padding: 0; /* Elimina el relleno */
     font-size: calc(4vw + 1rem); 

@@ -1,0 +1,56 @@
+.projects-page {
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+  position: relative;
+  max-width: 100%;
+  padding: 1vw;
+  justify-content: space-between;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  img {
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 1rem;
+    padding: 1vw;
+    margin: 1vw;
+  }
+}
+
+.project-info {
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-secondary);
+    transform: scale(1.1);
+  }
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}

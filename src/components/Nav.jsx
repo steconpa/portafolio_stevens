@@ -48,8 +48,8 @@ const Nav = () => {
       </button>
       <ul className={showMenu ? "menu-open" : ""}>
         {renderNavItem("/", "Sobre Mi")}
-        {renderNavItem("/projects", "Proyectos")}
-        {renderNavItem("/edtech", "EdTech")}
+        {renderNavItem("/projects", "Proyectos de Desarrollo")}
+        {renderNavItem("/edtech", "Proyectos EdTech")}
         {renderNavItem("/contact", "Contacto")}
       </ul>
     </nav>
